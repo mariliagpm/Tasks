@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Tasks</title>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<div class="header">
+	<input type="text" id="searchKey"/>
+	<button id="btnSearch">Search by Task Name - New Task</button>
+	<button id="btnAdd">New Task</button>
+</div>
+
+
+<div class="leftArea">
+<label>New Tasks</label>
+<ul id="taskListNew"></ul>
+
+</div>
+
+<form id="taskForm">
+	
+<div class="mainArea">
+
+<label>Id:</label>
+<input id="taskId" name="taskId" type="text" disabled />
+
+<label>Name:</label>
+<input type="text" id="name" name="name">
+
+<label>Description:</label>
+<input type="text" id="description" name="description"/>
+
+
+<label>Priority:</label>	
+<select name="priority" id="priority">
+  <option  value="Low">Low</option>
+  <option value="Medium">Medium</option>
+  <option value="High">High</option>
+  <option value="Critical">Critical</option>
+</select>
+
+
+<label>Username:</label>	
+<select name="username" id="username">
+  <option value="Marilia Matos">Marilia Matos</option>
+  <option value="Marco Antonio">Marco Antonio</option>
+  <option value="Jessica Oliveira">Jessica Oliveira</option>
+  <option value="Ana Matos">Ana Matos</option>
+  <option value="Rosana Matos">Rosana Matos</option>
+</select>
+
+
+
+<label>Status:</label>
+<input type="text" id="status" name="status" disabled />
+<br>
+<button id="btnSave">Save</button>
+<button id="btnDone">Mark as Done</button>
+<button id="btnDelete">Delete</button>
+
+ 
+</div>
+
+
+
+</form>
+
+
+<div class="rightArea">
+<label>Tasks - Done</label>
+<ul id="taskListDone"></ul>
+</div>
+
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
