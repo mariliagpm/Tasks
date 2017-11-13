@@ -1,4 +1,4 @@
-# PDVS Application (PHP Version) #
+# Dashboard Application (PHP Version) #
 
 This application provides an example of:
 1. Building a complete RESTful API in PHP using the Slim framework.
